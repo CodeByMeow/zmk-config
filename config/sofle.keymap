@@ -21,11 +21,6 @@
             bindings = <&kp DEL>;
             key-positions = <20 21>;
         };
-
-        GM_CAP {
-            bindings = <&kp CAPS>;
-            key-positions = <29 30>;
-        };
     };
 
     behaviors {
@@ -53,11 +48,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE         &kp N1                    &kp N2                    &kp N3                      &kp N4                        &kp N5                           &kp N6  &kp N7                         &kp N8                 &kp N9                &kp N0                &none
-&kp TAB           &kp Q                     &kp W                     &kp F                       &kp P                         &kp B                            &kp J   &kp L                          &kp U                  &kp Y                 &kp SQT               &kp BSPC
-&kp LEFT_CONTROL  &homerow_mods LEFT_GUI A  &homerow_mods LEFT_ALT R  &homerow_mods LEFT_SHIFT S  &homerow_mods LEFT_CONTROL T  &kp G                            &kp M   &homerow_mods RIGHT_CONTROL N  &homerow_mods RSHFT E  &homerow_mods RALT I  &homerow_mods RGUI O  &kp SEMICOLON
-&kp LSHFT         &kp Z                     &kp X                     &kp C                       &kp D                         &kp V   &kp C_MUTE    &none      &kp K   &kp H                          &kp COMMA              &kp DOT               &kp FSLH              &kp ESCAPE
-                                            &kp LGUI                  &kp LALT                    &kp LCTRL                     &mo 1   &kp RET       &kp SPACE  &mo 2   &kp RCTRL                      &kp RALT               &kp RGUI
+&kp GRAVE         &kp N1                    &kp N2                    &kp N3                      &kp N4                        &kp N5                               &kp N6  &kp N7                         &kp N8                 &kp N9                &kp N0                &none
+&kp TAB           &kp Q                     &kp W                     &kp F                       &kp P                         &kp B                                &kp J   &kp L                          &kp U                  &kp Y                 &kp SQT               &kp BSPC
+&kp LEFT_CONTROL  &homerow_mods LEFT_GUI A  &homerow_mods LEFT_ALT R  &homerow_mods LEFT_SHIFT S  &homerow_mods LEFT_CONTROL T  &kp G                                &kp M   &homerow_mods RIGHT_CONTROL N  &homerow_mods RSHFT E  &homerow_mods RALT I  &homerow_mods RGUI O  &kp SEMICOLON
+&kp LSHFT         &kp Z                     &kp X                     &kp C                       &kp D                         &kp V     &kp C_MUTE      &none      &kp K   &kp H                          &kp COMMA              &kp DOT               &kp FSLH              &kp ESCAPE
+                                            &none                     &none                       &kp LEFT_GUI                  &kp CAPS  &lt 1 RETURN    &kp SPACE  &mo 2   &none                          &none                  &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
